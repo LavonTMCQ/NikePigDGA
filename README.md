@@ -89,7 +89,9 @@ aiken build
 
 Complete documentation is available in the `/Documentation/` folder:
 
+- **[Team Success Guide](Documentation/15_Team_Success_Guide.md)** ⭐ **CRITICAL - START HERE**
 - **[Architecture Solutions](Documentation/13_Architecture_Solutions.md)** - Scalability solutions
+- **[Off-Chain Infrastructure](Documentation/14_Off_Chain_Infrastructure.md)** - Oracle Bot & services
 - **[Development Checklist](Documentation/11_Development_Checklist.md)** - Comprehensive roadmap
 - **[Security Considerations](Documentation/04_Security_Considerations.md)** - Security best practices
 

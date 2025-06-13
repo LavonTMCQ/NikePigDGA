@@ -39,6 +39,7 @@ Each major topic is covered in a separate markdown file within this directory. P
 -   [12_Development_Environment_Setup.md](./12_Development_Environment_Setup.md)
 -   [13_Architecture_Solutions.md](./13_Architecture_Solutions.md)
 -   [14_Off_Chain_Infrastructure.md](./14_Off_Chain_Infrastructure.md)
+-   [15_Team_Success_Guide.md](./15_Team_Success_Guide.md) **⭐ CRITICAL FOR TEAM SUCCESS**
 
 ## Development Status
 
