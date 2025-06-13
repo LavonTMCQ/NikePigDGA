@@ -37,6 +37,8 @@ Each major topic is covered in a separate markdown file within this directory. P
 -   [10_Glossary.md](./10_Glossary.md)
 -   [11_Development_Checklist.md](./11_Development_Checklist.md)
 -   [12_Development_Environment_Setup.md](./12_Development_Environment_Setup.md)
+-   [13_Architecture_Solutions.md](./13_Architecture_Solutions.md)
+-   [14_Off_Chain_Infrastructure.md](./14_Off_Chain_Infrastructure.md)
 
 ## Development Status
 
