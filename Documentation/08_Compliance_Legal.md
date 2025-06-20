@@ -1,10 +1,17 @@
-# 8. Compliance and Legal Considerations for NikePig
+# 8. Compliance and Legal Considerations for Last Pigs Standing
 
-**Disclaimer:** *This section provides general information and is not legal advice. The NikePig team (Dr Caleb L and $cashcoldgame) MUST consult with legal professionals specializing in cryptocurrency and gaming/gambling regulations in all relevant jurisdictions before launching the dApp.*
+**Disclaimer:** *This section provides general information and is not legal advice. The Last Pigs Standing team (Dr Caleb L and $cashcoldgame) MUST consult with legal professionals specializing in cryptocurrency and gaming/gambling regulations in all relevant jurisdictions before launching the dApp.*
 
-## 8.1. Nature of the Application
+## 8.1. Nature of the Application - Updated Legal Positioning
 
-NikePig, with its prize pools, random winners, and contribution-based mechanics, closely resembles a lottery or gambling activity. The legal and regulatory landscape for such applications involving cryptocurrencies is complex, varies significantly by jurisdiction, and is rapidly evolving.
+Last Pigs Standing is positioned as an **"experimental decentralized contribution and ranking game"** rather than a gambling or lottery application. This strategic positioning emphasizes:
+
+- **Contribution-based mechanics:** Users contribute to a shared pool
+- **Ranking system:** Winners are the "last 100 contributors," not "top 100"
+- **Transparency:** All logic is on-chain and publicly auditable
+- **Community participation:** Focus on community-driven reward streams
+
+The legal and regulatory landscape for such applications involving cryptocurrencies is complex, varies significantly by jurisdiction, and is rapidly evolving.
 
 ## 8.2. Key Areas of Concern
 

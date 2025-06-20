@@ -1,16 +1,17 @@
-# 3. NikePig Smart Contract Architecture
+# 3. Last Pigs Standing Smart Contract Architecture
 
-This section outlines the proposed smart contract architecture for the NikePig dApp on the Cardano blockchain. The architecture is designed to implement the core game mechanics, prize distribution, and token/NFT interactions as described in the project brief, leveraging Plutus smart contracts and Cardano's eUTXO model.
+This section outlines the proposed smart contract architecture for the Last Pigs Standing dApp (formerly NikePig) on the Cardano blockchain. The architecture is designed to implement the core game mechanics, prize distribution, Reset Killer mechanic, and token/NFT interactions as described in the project brief, leveraging Aiken smart contracts and Cardano's eUTXO model.
 
 ## 3.1. Core Components
 
-The NikePig dApp will primarily consist of the following smart contract components:
+The Last Pigs Standing dApp will primarily consist of the following smart contract components:
 
-1.  **Main Prize Pool Contract:** Manages the primary ADA prize pool, deposit logic, 72-hour countdown timer, and winner determination/payout for the main game.
+1.  **Main Prize Pool Contract:** Manages the primary ADA prize pool, deposit logic, 72-hour countdown timer with Reset Killer mechanic, and winner determination/payout for the main game.
 2.  **Daily Prize Contract:** Handles the daily distribution of a portion of contributions to a random daily winner, token holders ($NIKEPIG, $MISTER), and NFT holders (Nikeverse, Mister NFTs).
-3.  **Token Minting Policies:** Separate minting policies for $NIKEPIG and $MISTER tokens.
-4.  **NFT Minting Policies:** Minting policies for Nikeverse and Mister NFTs, potentially incorporating rarity logic.
-5.  **Treasury/Fee Contract (Optional but Recommended):** A contract or mechanism to manage the collection and distribution of team revenue (transaction fees, prize pool cut).
+3.  **Reset Killer Scheduler Contract:** Manages the scheduling and activation of Reset Killer events (1 month after launch, then every 6 months).
+4.  **Token Minting Policies:** Separate minting policies for $NIKEPIG and $MISTER tokens.
+5.  **NFT Minting Policies:** Minting policies for Nikeverse and Mister NFTs, potentially incorporating rarity logic.
+6.  **Treasury/Fee Contract (Optional but Recommended):** A contract or mechanism to manage the collection and distribution of team revenue (transaction fees, prize pool cut).
 
 ## 3.2. Main Prize Pool Contract (Plutus)
 
@@ -18,11 +19,14 @@ This is the central contract of the NikePig dApp.
 
 *   **State Management (Datum):** The contract's UTXO will hold a datum containing:
     *   `current_prize_pool_ada`: Total ADA accumulated.
-    *   `countdown_end_timestamp`: The exact timestamp when the 72-hour countdown will end if no new deposits are made.
+    *   `countdown_end_timestamp`: The exact timestamp when the countdown will end if no new deposits are made.
+    *   `reset_killer_active`: Boolean indicating if Reset Killer mode is currently active.
+    *   `reset_killer_next_timestamp`: Timestamp of the next scheduled Reset Killer event.
+    *   `current_reset_duration`: Current timer reset duration (decreases by 1 second each deposit during Reset Killer).
     *   `last_100_depositors`: A list (or a more optimized data structure) storing information about the last 100 depositors. Each entry should include:
         *   `wallet_address`: The depositor's wallet address.
         *   `amount_deposited`: The ADA amount deposited by this wallet that is currently part of the "last 100" qualifying deposits.
-        *   `deposit_timestamp`: Timestamp of their last qualifying deposit.
+        *   `deposit_timestamp`: High-precision timestamp (with fractions of seconds) of their last qualifying deposit.
     *   `hardcoded_deadline_timestamp`: The timestamp for the one-year (or other set period) deadline after which the diminishing reset mechanic activates.
     *   `current_reset_reduction`: The current reduction value (in seconds/minutes) for the countdown timer reset (applies after the hardcoded deadline).
 

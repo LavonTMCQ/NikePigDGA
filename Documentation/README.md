@@ -1,12 +1,12 @@
-# NikePig Documentation - Comprehensive Knowledge Base
+# Last Pigs Standing Documentation - Comprehensive Knowledge Base
 
-This Documentation folder contains a comprehensive knowledge base for developing and understanding the Cardano smart contracts required for the "NikePig" decentralized application.
+This Documentation folder contains a comprehensive knowledge base for developing and understanding the Cardano smart contracts required for the "Last Pigs Standing" decentralized application (formerly NikePig).
 
 **📁 Location:** `/Documentation/` - Centralized documentation system for professional development tracking
 
-## Project Overview: NikePig
+## Project Overview: Last Pigs Standing
 
-NikePig is a perpetual, high-stakes lottery dApp on the Cardano blockchain. It aims to attract continuous participation through unique game theory mechanics, an ever-growing prize pool, daily rewards, and long-term payout strategies.
+Last Pigs Standing is an experimental decentralized contribution and ranking game on the Cardano blockchain. It aims to attract continuous participation through unique game theory mechanics, including the innovative Reset Killer feature, an ever-growing prize pool, daily community participation incentives, and transparent payout strategies.
 
 ## Purpose of this Knowledge Base
 

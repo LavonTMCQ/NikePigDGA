@@ -1,0 +1,65 @@
+Of course. It looks like the team has made significant progress on refining the application's features, UI/UX, and legal positioning. I have synthesized all the new information from the latest conversation into an updated project document.
+
+This document incorporates the new "Reset Killer" mechanic, the detailed FAQ and "About" sections, and the latest UI/UX discussions, giving you a complete and current overview of the "Last Pigs Standing" project.
+
+---
+
+### **Project Update & Addendum: Last Pigs Standing (formerly NikePig)**
+
+This document reflects the latest decisions and feature additions discussed on June 15-17, 2025.
+
+### **1. New Core Feature: The "Reset Killer" Mechanic**
+
+A new game theory event has been added to ensure the prize pool eventually pays out, creating high-stakes, predictable hype cycles.
+
+* **Mechanic:** When a "Reset Killer" period is active, the standard 72-hour timer reset is modified. Each new deposit will reset the timer to **1 second less** than the previous reset, causing the countdown to rapidly diminish and making a final payout almost inevitable.
+* **Schedule:**
+    * The first Reset Killer will occur **1 month after launch**.
+    * Subsequent Reset Killers will occur **every 6 months** thereafter.
+* **UI Requirement:** The frontend must display a persistent **countdown timer** showing the time remaining until the next scheduled Reset Killer event.
+
+### **2. New UI/UX Requirements & Refinements**
+
+Based on team discussions and mockups, the following UI elements are now required:
+
+* **High-Precision Timestamps:** In any table or list showing deposit history (specifically the "Last 100 Deposits"), the timestamp for each transaction must be displayed with **fractions of a second**.
+* **Payout History:** The application must feature a section dedicated to showing the history of past payouts to build user trust and credibility.
+* **Pool Visualization (Key Decision):**
+    * **Guthix's Proposal (Leading):** The main landing page will focus exclusively on a large, impactful visualization of the **Main Prize Pool**. This is to maximize focus on the core game and avoid a cluttered "dashboard" look.
+    * A separate page, accessible via a **"Stats and Daily Raffle"** icon/button, will display the sizes of the smaller pools (Daily Winner Pool, Token Holder Pool, NFT Holder Pool), potentially visualized as smaller piggy banks.
+    * This approach avoids user confusion about where their deposit is going, as every deposit contributes to all pools simultaneously.
+
+### **3. New Content Sections (FAQ, Warnings & About Page)**
+
+The application must include the following informational sections, with the specified content:
+
+#### **a) FAQ Section**
+* To be located at the bottom of the main page.
+* **Q: Are there refunds?**
+    * A: No, your contributions are swallowed up into the void and there is no reversing it.
+* **Q: Who built Last Pigs Standing?**
+    * A: NikePig and Mister teams.
+* **Q: Does the Last Pigs Standing have a maximum lifespan?**
+    * A: No, it will continue until either no deposit is made in 72 hours, or a Reset Killer is reached.
+* **Q: What happens during a Reset Killer?**
+    * A: Each deposit resets the timer to 1 second less.
+* **Q: When are Reset Killers scheduled?**
+    * A: At 1 month after launch, and then 6 monthly after.
+
+#### **b) User Warnings**
+* A clearly visible warning must be included: **"Do NOT use a CEX (Centralized Exchange) to deposit your funds (because the payout will go to the CEX wallet that deposited, and not your own CEX receiving wallet)."**
+
+#### **c) "About Last Pigs Standing" Page / Disclaimer**
+* A dedicated page containing the full legal disclaimer drafted by Guthix. The key points to be included are:
+    * **Positioning:** Frame the app as an "experimental decentralized contribution and ranking game," not gambling. The winner is the **"last 100 contributors,"** not the "top 100."
+    * **Transparency:** Emphasize that all logic is on-chain and publicly auditable.
+    * **Daily Prizes Language:** The daily random prize will be referred to as a **"daily reward draw weighted by contribution activity"** to avoid regulatory terms like "lottery" or "raffle." The updated text for this section is:
+        > "Community Participation Incentives: In addition to the core ranking-based distribution mechanism, Last Pigs Standing includes daily community participation incentives... These incentives allocate small portions of daily contributions across multiple community-driven reward streams, which include: Proportional distributions to token holders, NFT-based community loyalty rewards, and Daily reward draws weighted by contribution activity..."
+
+### **4. Developer & Project Management Update**
+
+* **Project Name:** The official name is now **"Last Pigs Standing."**
+* **Developer Status (`$cashcoldgame`):**
+    * The Git repository is being set up.
+    * A formal task manager will be used to track progress.
+    * All new information (discussions, images, requirements) is being fed into a "knowledge store" to create a complete project plan before the first payment is made, ensuring full alignment.
